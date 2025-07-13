@@ -1,0 +1,145 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 50px;
+  background-color: #e0f2f7; /* Fondo azul claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #007bff; /* Título azul */
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: calc(100% - 20px); /* Ajustar para el padding */
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  transform: scale(1.2); /* Checkbox ligeramente más grande */
+}
+
+input[type="submit"] {
+  background-color: #28a745; /* Botón de envío verde */
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  width: auto; /* Permitir que el botón se ajuste al contenido */
+  display: block; /* Convertirlo en un elemento de bloque para centrar con margen automático */
+  margin: 30px auto 0; /* Centrar el botón */
+}
+
+input[type="submit"]:hover {
+  background-color: #218838; /* Verde más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Ligero efecto de elevación */
+}
+
+/* Estilos para resumen.php (asumiendo que podría usar algunos de estos, o puedes crear un CSS separado para ello) */
+body.resumen-page {
+  background-color: #f0f8ff; /* Azul más claro para la página de resumen */
+  padding: 30px;
+}
+
+h2 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+strong {
+  color: #007bff;
+}
+
+ul {
+  list-style-type: none; /* Quitar los puntos de la lista */
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  background-color: #e9f5f9; /* Fondo claro para los elementos de la lista */
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-left: 5px solid #007bff; /* Borde azul a la izquierda */
+  border-radius: 5px;
+  color: #333;
+  font-size: 1.05em;
+}
+
+h3 {
+  color: #007bff;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
